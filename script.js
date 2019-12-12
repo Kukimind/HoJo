@@ -1,15 +1,16 @@
-function sendForm(e){
-     
-    // получаем значение поля key
-    var keyBox = document.search.key;
-    var val = keyBox.value;
-    if(val.length>5){
-        alert("Недопустимая длина строки");
-        e.preventDefault();
-    }   
-    else
-        alert("Отправка разрешена");
+use strict';
+
+const fullScreen = document.getElementById('button-full'),
+normalScreen = document.getElementById('button-normal');
+
+function setFullScreen() {
+document.documentElement.requestFullscreen();
+alert("asdasdsa");
+function setNormalScreen() {
+document.exitFullscreen();
 }
- 
-var sendButton = document.search.send;
-sendButton.addEventListener("click", sendForm);
+fullScreen.addEventListener('click', setFullScreen, true);
+normalScreen.addEventListener('click', setNormalScreen, true);
+
+
+
