@@ -1,16 +1,8 @@
-use strict';
-
-const fullScreen = document.getElementById('button-full'),
-normalScreen = document.getElementById('button-normal');
-
-function setFullScreen() {
-document.documentElement.requestFullscreen();
-alert("asdasdsa");
-function setNormalScreen() {
-document.exitFullscreen();
+const a = {
+	boo : 123
+	lopo: lo => {
+		let i ;
+		for( i = 0 ; i < 10 ; i++)
+			console.log(i + 5);
+	}
 }
-fullScreen.addEventListener('click', setFullScreen, true);
-normalScreen.addEventListener('click', setNormalScreen, true);
-
-
-
